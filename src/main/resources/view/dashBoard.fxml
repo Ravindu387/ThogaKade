@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #2d98da;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.DashBoardController">
+   <children>
+      <Label layoutX="443.0" layoutY="24.0" text="Customer Manger System" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="476.0" layoutY="113.0" mnemonicParsing="false" onAction="#btnOnActionAdd" prefHeight="38.0" prefWidth="267.0" style="-fx-border-radius: 10; -fx-background-color: #3d3d3d;" text="Add Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="476.0" layoutY="178.0" mnemonicParsing="false" onAction="#btnOnActionUpdate" prefHeight="38.0" prefWidth="267.0" style="-fx-border-radius: 10; -fx-background-color: #3d3d3d;" text="Update Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="476.0" layoutY="239.0" mnemonicParsing="false" onAction="#btnOnActionDelete" prefHeight="38.0" prefWidth="267.0" style="-fx-border-radius: 10; -fx-background-color: #3d3d3d;" text="Delete Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="476.0" layoutY="302.0" mnemonicParsing="false" onAction="#btnOnActionSearch" prefHeight="38.0" prefWidth="267.0" style="-fx-border-radius: 10; -fx-background-color: #3d3d3d;" text="Search Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="476.0" layoutY="366.0" mnemonicParsing="false" onAction="#btnOnActionViewCustomerList" prefHeight="38.0" prefWidth="267.0" style="-fx-border-radius: 10; -fx-background-color: #3d3d3d;" text="View Customer List" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="500.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/main%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

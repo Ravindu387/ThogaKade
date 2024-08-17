@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #2d98da;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.AddCustomerFormController">
+   <children>
+      <JFXTextField fx:id="txtId" alignment="CENTER" layoutX="436.0" layoutY="100.0" prefHeight="40.0" prefWidth="326.0" promptText="Type Customer ID">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fitHeight="500.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/add%20Customer.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="467.0" layoutY="25.0" text="Add Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtName" alignment="CENTER" layoutX="519.0" layoutY="164.0" prefHeight="40.0" prefWidth="243.0" promptText="Type Customer Name">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="txtType" layoutX="436.0" layoutY="178.0" promptText="Title" />
+      <JFXTextField fx:id="txtAddress" alignment="CENTER" layoutX="436.0" layoutY="230.0" prefHeight="40.0" prefWidth="326.0" promptText="Type Customer Address">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCnumber" alignment="CENTER" layoutX="436.0" layoutY="297.0" prefHeight="40.0" prefWidth="326.0" promptText="Type Customer Contact.No">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </JFXTextField>
+      <DatePicker fx:id="txtBirthday" layoutX="443.0" layoutY="379.0" prefHeight="32.0" prefWidth="318.0" />
+      <JFXButton layoutX="537.0" layoutY="436.0" onAction="#btnonActionAddCustomer" prefHeight="43.0" prefWidth="130.0" style="-fx-background-color: #3d3d3d;" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

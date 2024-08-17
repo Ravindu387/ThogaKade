@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #2d98da;" stylesheets="@../CSS/table.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.ViewCustomerControlller">
+   <children>
+      <Label layoutX="263.0" layoutY="36.0" text="Customer List" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="43.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblCustomer" layoutX="17.0" layoutY="123.0" prefHeight="281.0" prefWidth="766.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="152.79998779296875" text="ID" />
+            <TableColumn fx:id="colName" prefWidth="152.79998779296875" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="152.79998779296875" text="Address" />
+            <TableColumn fx:id="colCnumber" prefWidth="152.79998779296875" text="Contact No." />
+            <TableColumn fx:id="colBirthday" prefWidth="152.79998779296875" text="Birthday" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="335.0" layoutY="435.0" onAction="#btnonActionAddCustomer" prefHeight="43.0" prefWidth="130.0" style="-fx-background-color: #3d3d3d;" text="Reload" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+   <styleClass>
+      <String fx:value="column-header-background" />
+      <String fx:value="table-view" />
+   </styleClass>
+</AnchorPane>

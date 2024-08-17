@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #2d98da;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.DeleteCustomerFormController">
+   <children>
+      <Label layoutX="257.0" layoutY="27.0" text="Delete Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="37.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUpdateId" alignment="CENTER" layoutX="23.0" layoutY="101.0" prefHeight="34.0" prefWidth="225.0" promptText="Type Customer ID">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="267.0" layoutY="110.0" onAction="#btnOnActionSearch" style="-fx-background-color: #3d3d3d;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="310.0" fitWidth="300.0" layoutX="23.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/delete.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtName" alignment="CENTER" layoutX="477.0" layoutY="122.0" prefHeight="31.0" prefWidth="254.0">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="479.0" layoutY="97.0" text="Customer Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCnumber" alignment="CENTER" layoutX="477.0" layoutY="263.0" prefHeight="31.0" prefWidth="254.0">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="477.0" layoutY="237.0" text="Customer Contact No." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtAddress" alignment="CENTER" layoutX="477.0" layoutY="192.0" prefHeight="31.0" prefWidth="254.0">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="477.0" layoutY="167.0" text="Customer Address" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="479.0" layoutY="305.0" text="Customer Birthday" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="txtBirthday" layoutX="477.0" layoutY="335.0" prefHeight="38.0" prefWidth="254.0" />
+      <Label layoutX="486.0" layoutY="402.0" text="Are you sure delete this customer..?">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="519.0" layoutY="439.0" onAction="#btnOnActionYes" style="-fx-background-color: #3d3d3d;" text="   Yes   " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="642.0" layoutY="439.0" style="-fx-background-color: #3d3d3d;" text="   No   " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
