@@ -55,10 +55,7 @@ public class ViewCustomerControlller {
         }
 
 
-//        customerList.forEach(obj->{
-//
-//            customerObservableList.add(obj);
-//        });
+
 
         tblCustomer.setItems(customerObservableList);
     }
